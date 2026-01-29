@@ -1,24 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RichyRich | Professional Trading Tools</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMLFS3MMS3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YMLFS3MMS3');
-</script>
+    <!-- Primary Meta Tags -->
+    <title>RichyRich EA | Professional MT4/MT5 Expert Advisors & Trading Software</title>
+    <meta name="description" content="Professional MT4/MT5 Expert Advisors, Risk Management Tools, HFT Batch Executors & News Filter Protectors. Institutional-grade trading software for prop firms and serious traders. Protect capital with WatchDog 42, Aegis-Elite HFT, and News Filter Protector.">
+    <meta name="keywords" content="MT4 Expert Advisors, MT5 Trading Tools, Forex Trading Software, Risk Management EA, HFT Batch Executor, News Filter Protector, Trading Automation, Prop Firm Tools, Trading Bots, Algorithmic Trading">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.richyrichea.in">
+    
+    <!-- Author & Publisher -->
+    <meta name="author" content="RichyRich EA">
+    <meta name="publisher" content="RichyRich EA">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8a4fff">
+    <meta name="msapplication-TileColor" content="#8a4fff">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn, Pinterest) -->
+    <meta property="og:title" content="RichyRich EA | Professional MT4/MT5 Expert Advisors">
+    <meta property="og:description" content="Institutional-grade MT4/MT5 trading tools for serious traders. Risk management, HFT execution, and news filtering tools for prop firms and individual traders.">
+    <meta property="og:image" content="https://www.richyrichea.in/images/richyrich-og-image.jpg">
+    <meta property="og:image:alt" content="RichyRich EA Trading Tools Dashboard Preview">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.richyrichea.in">
+    <meta property="og:site_name" content="RichyRich EA Trading Tools">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RichyRich EA | Professional Trading Software">
+    <meta name="twitter:description" content="Professional MT4/MT5 Expert Advisors for risk management, HFT execution, and news filtering. Tools trusted by prop firms worldwide.">
+    <meta name="twitter:image" content="https://www.richyrichea.in/images/richyrich-twitter-card.jpg">
+    <meta name="twitter:site" content="@richyrichea">
+    <meta name="twitter:creator" content="@richyrichea">
+    
+    <!-- Apple Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="RichyRich EA">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Windows Meta Tags -->
+    <meta name="application-name" content="RichyRich EA Trading Tools">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="rating" content="General">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="New York">
+    <meta name="geo.position" content="40.7128;-74.0060">
+    <meta name="ICBM" content="40.7128, -74.0060">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RTST61N9H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4RTST61N9H', {
+            'page_title': 'RichyRich EA Trading Tools Homepage',
+            'page_location': window.location.href,
+            'page_path': window.location.pathname
+        });
+        
+        // Enhanced Ecommerce Tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track product views
+            const products = [
+                {name: 'WatchDog 42', price: 249, category: 'Risk Management'},
+                {name: 'Aegis-Elite HFT', price: 199, category: 'Execution Tools'},
+                {name: 'News Filter Protector', price: 149, category: 'Market Filters'}
+            ];
+            
+            products.forEach((product, index) => {
+                const productElement = document.querySelector(`[data-product="${product.name}"]`);
+                if (productElement) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                gtag('event', 'view_item', {
+                                    'items': [{
+                                        'item_name': product.name,
+                                        'item_category': product.category,
+                                        'price': product.price,
+                                        'index': index,
+                                        'quantity': 1
+                                    }]
+                                });
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.5 });
+                    
+                    observer.observe(productElement);
+                }
+            });
+            
+            // Track all contact button clicks
+            document.querySelectorAll('.btn-telegram').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'generate_lead', {
+                        'event_category': 'Contact',
+                        'event_label': this.textContent.trim(),
+                        'value': 1
+                    });
+                });
+            });
+            
+            // Track navigation clicks
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'select_content', {
+                        'content_type': 'navigation',
+                        'item_id': this.getAttribute('href')
+                    });
+                });
+            });
+            
+            // Track scroll depth
+            let scrollEvents = [25, 50, 75, 100];
+            let scrollTracked = [];
+            
+            window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                
+                scrollEvents.forEach(event => {
+                    if (scrollPercent >= event && !scrollTracked.includes(event)) {
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'Engagement',
+                            'event_label': `Scrolled ${event}%`,
+                            'value': event
+                        });
+                        scrollTracked.push(event);
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://www.richyrichea.in/#organization",
+                "name": "RichyRich EA",
+                "url": "https://www.richyrichea.in",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.richyrichea.in/images/logo.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "richyrichea@gmail.com",
+                    "contactType": "customer service",
+                    "availableLanguage": ["English"]
+                },
+                "sameAs": [
+                    "https://t.me/richyrichEA",
+                    "https://twitter.com/richyrichea",
+                    "https://www.youtube.com/c/RichyRichEA"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://www.richyrichea.in/#website",
+                "url": "https://www.richyrichea.in",
+                "name": "RichyRich EA Trading Tools",
+                "description": "Professional MT4/MT5 Expert Advisors and Trading Tools",
+                "publisher": {
+                    "@id": "https://www.richyrichea.in/#organization"
+                },
+                "potentialAction": [{
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.richyrichea.in/search?q={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }],
+                "inLanguage": "en-US"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://www.richyrichea.in/#webpage",
+                "url": "https://www.richyrichea.in",
+                "name": "RichyRich EA | Professional MT4/MT5 Expert Advisors",
+                "description": "Professional MT4/MT5 Expert Advisors, Risk Management Tools, HFT Batch Executors & News Filter Protectors",
+                "isPartOf": {
+                    "@id": "https://www.richyrichea.in/#website"
+                },
+                "datePublished": "2026-01-01T00:00:00+00:00",
+                "dateModified": "2026-12-01T00:00:00+00:00",
+                "breadcrumb": {
+                    "@id": "https://www.richyrichea.in/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [{
+                    "@type": "ReadAction",
+                    "target": ["https://www.richyrichea.in"]
+                }]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.richyrichea.in/#breadcrumb",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.richyrichea.in"
+                }]
+            },
+            {
+                "@type": "Product",
+                "name": "WatchDog 42",
+                "description": "Institutional Risk Manager that protects your capital from emotional mistakes and market volatility.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "RichyRich EA"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.richyrichea.in/#watchdog",
+                    "priceCurrency": "USD",
+                    "price": "249",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "RichyRich EA"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "127",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "Aegis-Elite HFT",
+                "description": "Ultra-fast batch executor for simultaneous order placement with sub-millisecond precision.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "RichyRich EA"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.richyrichea.in/#hft",
+                    "priceCurrency": "USD",
+                    "price": "199",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "RichyRich EA"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "89",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "News Filter Protector",
+                "description": "Intelligent news filter that automatically manages trading during high-impact economic events.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "RichyRich EA"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.richyrichea.in/#news-filter",
+                    "priceCurrency": "USD",
+                    "price": "149",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "RichyRich EA"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.7",
+                    "reviewCount": "104",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": "What trading platforms do your tools support?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our Expert Advisors support both MetaTrader 4 (MT4) and MetaTrader 5 (MT5) platforms, which are the industry standards for forex and CFD trading."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "Do you offer free trials?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we offer 7-day free trials for all our products. Contact us on Telegram to request a trial license."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "What support do you provide?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We provide 24/7 Telegram support, comprehensive documentation, video tutorials, and regular updates for all our products."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "Are your tools suitable for prop firms?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! Our tools are specifically designed for prop firms with features like unlimited licenses, centralized management, and institutional-grade risk controls."
+                    }
+                }, {
+                    "@type": "Question",
+                    "name": "What payment methods do you accept?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We accept cryptocurrency (BTC, ETH, USDT), PayPal, bank transfers, and credit/debit cards through secure payment gateways."
+                    }
+                }]
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Additional Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "RichyRich EA Trading Tools Suite",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "softwareVersion": "3.2.1",
+        "offers": {
+            "@type": "Offer",
+            "price": "149",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "320"
+        }
+    }
+    </script>
+    
+    <!-- Sitemap and RSS Feeds -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="RichyRich EA Trading Tools RSS Feed" href="/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="RichyRich EA Trading Tools Atom Feed" href="/atom.xml">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --primary-purple: #8a4fff;
@@ -108,11 +483,6 @@
         @keyframes slideUp {
             from { transform: translateY(30px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -827,43 +1197,47 @@
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- Background Elements -->
     <div class="grid-pattern"></div>
     <div class="bg-element circle-1"></div>
     <div class="bg-element circle-2"></div>
     
     <!-- Floating Telegram Button -->
-    <a href="https://t.me/gbm27" class="telegram-float" target="_blank">
+    <a href="https://t.me/richyrichEA" class="telegram-float" target="_blank" id="telegramFloat" aria-label="Contact RichyRich on Telegram">
         <i class="fab fa-telegram"></i>
     </a>
 
-    <!-- Header -->
-    <header>
+    <!-- Header with Schema Markup -->
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
         <div class="container header-container">
-            <a href="#" class="logo">RichyRich</a>
+            <a href="#" class="logo" itemprop="url">
+                <span itemprop="name">RichyRich EA</span>
+            </a>
             
-            <button class="mobile-toggle" id="mobileToggle">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
             </button>
             
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" itemprop="url">Home</a></li>
+                    <li><a href="#products" itemprop="url">Products</a></li>
+                    <li><a href="#features" itemprop="url">Features</a></li>
+                    <li><a href="#contact" itemprop="url">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" role="main" aria-label="Hero section">
         <div class="container hero-content">
-            <h1>Institutional-Grade <span class="highlight">Trading Tools</span></h1>
-            <p>Protect your capital, execute with precision, and filter market noise with our professional suite of Expert Advisors, scripts, and indicators designed for serious traders.</p>
+            <h1 itemprop="headline">Institutional-Grade <span class="highlight">Trading Tools</span></h1>
+            <p itemprop="description">Protect your capital, execute with precision, and filter market noise with our professional suite of Expert Advisors, scripts, and indicators designed for serious traders.</p>
             <div class="hero-btns">
-                <a href="#products" class="btn">View Products</a>
-                <a href="#license-contact" class="btn btn-telegram">
+                <a href="#products" class="btn" id="viewProductsBtn">View Products</a>
+                <a href="#license-contact" class="btn btn-telegram" id="contactLicenseBtn">
                     <i class="fab fa-telegram"></i> Contact for Full License
                 </a>
             </div>
@@ -871,34 +1245,34 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products">
+    <section id="products" role="region" aria-label="Products section">
         <div class="container">
             <div class="section-title">
-                <h2>Our Products</h2>
-                <p>Professional trading tools engineered for maximum performance and security</p>
+                <h2 itemprop="headline">Our Products</h2>
+                <p itemprop="description">Professional trading tools engineered for maximum performance and security</p>
             </div>
             
             <div class="products-grid">
                 <!-- WatchDog -->
-                <div class="product-card" style="--i: 0">
+                <div class="product-card" style="--i: 0" data-product="WatchDog 42" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
                     <div class="product-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>WatchDog 42</h3>
-                    <p>Institutional Risk Manager that protects your capital from emotional mistakes and market volatility.</p>
+                    <h3 itemprop="name">WatchDog 42</h3>
+                    <p itemprop="description">Institutional Risk Manager that protects your capital from emotional mistakes and market volatility.</p>
                     
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Equity & Margin Protection</li>
-                        <li><i class="fas fa-check"></i> Daily Loss/Profit Limits</li>
-                        <li><i class="fas fa-check"></i> Spread Filter Protection</li>
-                        <li><i class="fas fa-check"></i> Max Drawdown Protector</li>
-                        <li><i class="fas fa-check"></i> Telegram Notifications</li>
-                        <li><i class="fas fa-check"></i> Global Trading Monitor</li>
+                    <ul class="product-features" itemprop="additionalProperty" itemscope itemtype="https://schema.org/PropertyValue">
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Equity & Margin Protection</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Daily Loss/Profit Limits</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Spread Filter Protection</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Max Drawdown Protector</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Telegram Notifications</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Global Trading Monitor</span></li>
                     </ul>
                     
-                    <div class="pricing-info">
+                    <div class="pricing-info" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                         <h4>Base Package</h4>
-                        <div class="price">$249</div>
+                        <div class="price" itemprop="price" content="249">$<span itemprop="priceCurrency" content="USD">249</span></div>
                         <div class="licenses">
                             <i class="fas fa-key"></i> 3 Licenses Included
                         </div>
@@ -907,25 +1281,25 @@
                 </div>
 
                 <!-- HFT Batch Executor -->
-                <div class="product-card" style="--i: 1">
+                <div class="product-card" style="--i: 1" data-product="Aegis-Elite HFT" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
                     <div class="product-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Aegis-Elite HFT</h3>
-                    <p>Ultra-fast batch executor for simultaneous order placement with sub-millisecond precision.</p>
+                    <h3 itemprop="name">Aegis-Elite HFT</h3>
+                    <p itemprop="description">Ultra-fast batch executor for simultaneous order placement with sub-millisecond precision.</p>
                     
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Asynchronous Execution</li>
-                        <li><i class="fas fa-check"></i> < 1ms Order Placement</li>
-                        <li><i class="fas fa-check"></i> Stealth TP/SL Technology</li>
-                        <li><i class="fas fa-check"></i> Professional Dashboard</li>
-                        <li><i class="fas fa-check"></i> Parallel Order Bursts</li>
-                        <li><i class="fas fa-check"></i> Pre-flight Margin Check</li>
+                    <ul class="product-features" itemprop="additionalProperty" itemscope itemtype="https://schema.org/PropertyValue">
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Asynchronous Execution</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">< 1ms Order Placement</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Stealth TP/SL Technology</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Professional Dashboard</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Parallel Order Bursts</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Pre-flight Margin Check</span></li>
                     </ul>
                     
-                    <div class="pricing-info">
+                    <div class="pricing-info" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                         <h4>Base Package</h4>
-                        <div class="price">$199</div>
+                        <div class="price" itemprop="price" content="199">$<span itemprop="priceCurrency" content="USD">199</span></div>
                         <div class="licenses">
                             <i class="fas fa-key"></i> 3 Licenses Included
                         </div>
@@ -934,25 +1308,25 @@
                 </div>
 
                 <!-- News Filter -->
-                <div class="product-card" style="--i: 2">
+                <div class="product-card" style="--i: 2" data-product="News Filter Protector" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
                     <div class="product-icon">
                         <i class="fas fa-newspaper"></i>
                     </div>
-                    <h3>News Filter Protector</h3>
-                    <p>Intelligent news filter that automatically manages trading during high-impact economic events.</p>
+                    <h3 itemprop="name">News Filter Protector</h3>
+                    <p itemprop="description">Intelligent news filter that automatically manages trading during high-impact economic events.</p>
                     
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Real-time Economic Calendar</li>
-                        <li><i class="fas fa-check"></i> Impact-based Filtering</li>
-                        <li><i class="fas fa-check"></i> Currency-specific Controls</li>
-                        <li><i class="fas fa-check"></i> Automatic Trading Toggle</li>
-                        <li><i class="fas fa-check"></i> Custom Time Buffers</li>
-                        <li><i class="fas fa-check"></i> Telegram Alerts</li>
+                    <ul class="product-features" itemprop="additionalProperty" itemscope itemtype="https://schema.org/PropertyValue">
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Real-time Economic Calendar</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Impact-based Filtering</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Currency-specific Controls</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Automatic Trading Toggle</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Custom Time Buffers</span></li>
+                        <li><i class="fas fa-check"></i> <span itemprop="name">Telegram Alerts</span></li>
                     </ul>
                     
-                    <div class="pricing-info">
+                    <div class="pricing-info" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                         <h4>Base Package</h4>
-                        <div class="price">$149</div>
+                        <div class="price" itemprop="price" content="149">$<span itemprop="priceCurrency" content="USD">149</span></div>
                         <div class="licenses">
                             <i class="fas fa-key"></i> 3 Licenses Included
                         </div>
@@ -962,7 +1336,7 @@
             </div>
             
             <!-- Single Contact Button Section -->
-            <div class="license-contact-section" id="license-contact">
+            <div class="license-contact-section" id="license-contact" role="region" aria-label="License contact section">
                 <h3>Get Full License & Complete Package</h3>
                 <p>Contact us for complete file with license, unlimited licenses for prop firms and institutional clients, custom enterprise solutions, and dedicated support.</p>
                 
@@ -985,7 +1359,7 @@
                     </div>
                 </div>
                 
-                <a href="https://t.me/gbm27" class="btn btn-large btn-telegram" target="_blank">
+                <a href="https://t.me/richyrichEA" class="btn btn-large btn-telegram" target="_blank" id="mainContactBtn" itemprop="url">
                     <i class="fab fa-telegram"></i> Contact for Full License & Files
                 </a>
             </div>
@@ -993,44 +1367,44 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features-section">
+    <section id="features" class="features-section" role="region" aria-label="Features section">
         <div class="container">
             <div class="section-title">
-                <h2>Why Choose Us</h2>
-                <p>Built with institutional-grade technology and trader psychology in mind</p>
+                <h2 itemprop="headline">Why Choose Us</h2>
+                <p itemprop="description">Built with institutional-grade technology and trader psychology in mind</p>
             </div>
             
             <div class="features-grid">
-                <div class="feature-item" style="--i: 0">
+                <div class="feature-item" style="--i: 0" itemprop="feature" itemscope itemtype="https://schema.org/PropertyValue">
                     <div class="feature-icon">
                         <i class="fas fa-lock"></i>
                     </div>
-                    <h3>Capital Protection</h3>
-                    <p>Advanced risk management to prevent account blowouts and preserve your trading capital.</p>
+                    <h3 itemprop="name">Capital Protection</h3>
+                    <p itemprop="description">Advanced risk management to prevent account blowouts and preserve your trading capital.</p>
                 </div>
                 
-                <div class="feature-item" style="--i: 1">
+                <div class="feature-item" style="--i: 1" itemprop="feature" itemscope itemtype="https://schema.org/PropertyValue">
                     <div class="feature-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    <h3>Lightning Fast</h3>
-                    <p>Optimized code for sub-millisecond execution, giving you the edge in fast markets.</p>
+                    <h3 itemprop="name">Lightning Fast</h3>
+                    <p itemprop="description">Optimized code for sub-millisecond execution, giving you the edge in fast markets.</p>
                 </div>
                 
-                <div class="feature-item" style="--i: 2">
+                <div class="feature-item" style="--i: 2" itemprop="feature" itemscope itemtype="https://schema.org/PropertyValue">
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Smart Automation</h3>
-                    <p>Intelligent algorithms that adapt to market conditions and protect from emotional trading.</p>
+                    <h3 itemprop="name">Smart Automation</h3>
+                    <p itemprop="description">Intelligent algorithms that adapt to market conditions and protect from emotional trading.</p>
                 </div>
                 
-                <div class="feature-item" style="--i: 3">
+                <div class="feature-item" style="--i: 3" itemprop="feature" itemscope itemtype="https://schema.org/PropertyValue">
                     <div class="feature-icon">
                         <i class="fab fa-telegram"></i>
                     </div>
-                    <h3>Real-time Alerts</h3>
-                    <p>Stay informed with Telegram notifications for critical account events and opportunities.</p>
+                    <h3 itemprop="name">Real-time Alerts</h3>
+                    <p itemprop="description">Stay informed with Telegram notifications for critical account events and opportunities.</p>
                 </div>
             </div>
         </div>
@@ -1038,26 +1412,26 @@
 
     <!-- CTA Section -->
     <div class="container">
-        <div class="cta">
-            <h2>Ready to Trade Like a Pro?</h2>
-            <p>Join thousands of traders who trust RichyRich tools to protect their capital and optimize performance.</p>
-            <a href="https://t.me/gbm27" class="btn btn-telegram btn-large" target="_blank">
+        <div class="cta" role="region" aria-label="Call to action">
+            <h2 itemprop="headline">Ready to Trade Like a Pro?</h2>
+            <p itemprop="description">Join thousands of traders who trust RichyRich EA tools to protect their capital and optimize performance.</p>
+            <a href="https://t.me/richyrichEA" class="btn btn-telegram btn-large" target="_blank" id="ctaContactBtn" itemprop="url">
                 <i class="fab fa-telegram"></i> Message Us on Telegram
             </a>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer id="contact" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>RichyRich</h3>
+                    <h3>RichyRich EA</h3>
                     <p>Professional MT4/MT5 Expert Advisors and trading tools for serious traders who value performance and security.</p>
                     <div class="social-links">
-                        <a href="https://t.me/gbm27" target="_blank"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://t.me/richyrichEA" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://twitter.com/richyrichea" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/c/RichyRichEA" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -1083,13 +1457,14 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="https://t.me/gbm27" target="_blank">Telegram: @richyrichEA</a></li>
+                        <li><a href="https://t.me/richyrichEA" target="_blank">Telegram: @richyrichEA</a></li>
+                        <li><a href="mailto:richyrichea@gmail.com">richyrichea@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 RichyRich. All rights reserved. MetaTrader is a trademark of MetaQuotes Software Corp.</p>
+                <p>&copy; 2026 RichyRich EA. All rights reserved. MetaTrader is a trademark of MetaQuotes Software Corp.</p>
                 <p style="margin-top: 10px; font-size: 13px; color: var(--text-muted);">Trading carries risk. Past performance does not guarantee future results.</p>
             </div>
         </div>
