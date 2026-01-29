@@ -1,0 +1,117 @@
+# RichyRich EA Trading Tools - Robots.txt
+# Last updated: December 1, 2026
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.richyrichea.in/sitemap.xml
+
+# Allow all crawlers to access all content
+Disallow: 
+
+# Allow image indexing
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Allow CSS and JS for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+
+# Allow font files
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Allow video files
+Allow: /*.mp4$
+Allow: /*.webm$
+Allow: /*.ogg$
+
+# Allow PDF and document files
+Allow: /*.pdf$
+Allow: /*.doc$
+Allow: /*.docx$
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Disallow: 
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Disallow: 
+Crawl-delay: 5
+
+User-agent: Slurp
+Allow: /
+Disallow: 
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: 
+Crawl-delay: 5
+
+User-agent: Baiduspider
+Allow: /
+Disallow: 
+Crawl-delay: 10
+
+User-agent: YandexBot
+Allow: /
+Disallow: 
+Crawl-delay: 10
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+# Development/Staging environment blocking
+User-agent: *
+Disallow: /staging/
+Disallow: /test/
+Disallow: /dev/
+Disallow: /beta/
+
+# Admin panel blocking (if applicable)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /administrator/
+Disallow: /backend/
+
+# Sensitive directories
+Disallow: /includes/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /private/
+
+# Query parameters to ignore (for single page applications)
+Disallow: /*?*
+Allow: /*?utm_*
+Allow: /*?ref=*
+Allow: /*?source=*
+
+# Comment for search engines
+# This website is a single-page application for RichyRich EA Trading Tools
+# All content is accessible through anchor links on the main page
+# Product sections: WatchDog 42, Aegis-Elite HFT, News Filter Protector
